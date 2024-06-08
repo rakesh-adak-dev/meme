@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="main">
+     <div class="r"><a href="https://rakesh-ada.github.io/meme/" style="font-size: 32px;" >🏠</a></div>
+     <div class="header">
+        <h1>MEME 2023</h1>
+    </div>
+   <div class="video"> 
+    <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/m_z6J5CrqCk?si=YLWdV0WAmcwPCKFc&amp;controls=0&amp;autoplay=1"  frameborder="0" allow=" autoplay;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+
+   <div class="gif">
+   <div class="image1"><img src="dog.gif"/></div>
+   <div  class="coloum">
+     <div>
+        <p>Click Here To</p>
+        <p>Change Meme</p>
+        <p>👇</p>
+     </div>
+     <div class="btn"><button onclick="genAMeme()"><p style="color: black;">Meme</p></button></div>
+     
+     </div>
+    <div class="image2"><img src="dog.gif"/></div>
+   </div>
+ </div>
+
+   <script>
+
+
+
+
+
+   function genAMeme(){
+    var meme = [
+        "https://www.youtube.com/embed/4oCce7Eer8g?si=885NT_Y3k1ARdD4h&amp;controls=0&amp;autoplay=1&amp;start=15&amp;clip=UgkxQV5rIeNDPQxr6LFC__VSnjTz1U4-PfXB&amp;clipt=EN2yARjT_AE",
+        "https://www.youtube.com/embed/4oCce7Eer8g?si=07xOhCx90HzqldJB&amp;controls=0&amp;autoplay=1&amp;clip=UgkxlScrrp-E25_9EYyw81TAYwQb3E9sasD3&amp;clipt=EMR3GLOtAQ",
+        "https://www.youtube.com/embed/4oCce7Eer8g?si=9zQE_xY67aaZeHxR&amp;controls=0&amp;clip=Ugkx9K8Relbfv2akkDjlZ-7T-Q3vLsgpTWEY&amp;autoplay=1&amp;clipt=ELC5AhiP-QI" ,
+        "https://www.youtube.com/embed/4oCce7Eer8g?si=PTseTug_3mv9Ho0O&amp;controls=0&amp;autoplay=1&amp;clip=UgkxOjIo9baTNq0V0qhFQRoPsXC8ayRsLR4y&amp;clipt=EIXsCBjvzAk",
+        "https://www.youtube.com/embed/4oCce7Eer8g?si=gO5JQWWPcuiE8T24&amp;controls=0&amp;autoplay=1&amp;clip=UgkxxApt3SopQd3Ij1sqCis3cNXQboMD9wTi&amp;clipt=EO3OCRiFqAo",
+        "https://www.youtube.com/embed/4oCce7Eer8g?si=thJGiHEzF-mmeU8W&amp;controls=0&amp;autoplay=1&amp;clip=UgkxRTyXWoWS5RtOnTV7wcoA2eqaLSanlg-z&amp;clipt=EMuoFBiFrRU" ,
+        "https://www.youtube.com/embed/4oCce7Eer8g?si=iuVdaLfqS1hWSjRH&amp;controls=0&amp;autoplay=1&amp;clip=Ugkx41Oq7jMy1Wj8b9x-baVA70GvA6N3zO0D&amp;clipt=EPi7FRicmhY",
+        "https://www.youtube.com/embed/4oCce7Eer8g?si=fdI6hUGte22xe4JZ&amp;controls=0&amp;autoplay=1&amp;clip=UgkxFfXpYbfr93YhO2fFHK1R7qUb7c89X6Zo&amp;clipt=EOTzGxjavRw",
+        "https://www.youtube.com/embed/4oCce7Eer8g?si=uc3QTyXfTu-3sXof&amp;controls=0&amp;autoplay=1&amp;clip=UgkxT4sK-eT8Fti1Lxr2Mv7kCqkAOGzoO_9f&amp;clipt=EJrIIxjugiQ",
+        "https://www.youtube.com/embed/4oCce7Eer8g?si=X1upHznG4lg1RlTh&amp;controls=0&amp;autoplay=1&amp;clip=UgkxK_t4fZlmBoYpgvDRZKmQ63vcME-3ibh5&amp;clipt=EMS_JBj_pyU" ,
+    ];
+
+    var n = Math.random()*10;
+        n = Math.floor(n);
+
+   var myMeme = meme[n];
+
+  let elem = document.querySelector("iframe");
+ elem.setAttribute("src",myMeme);
+}
+
+   </script>
+</body>
+</html>
